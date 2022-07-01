@@ -1,0 +1,24 @@
+## How to Install broot
+1- Download the broot binary for Raspberry Pi.
+
+curl -o broot -L https://dystroy.org/broot/download/armv7-unknown-linux-gnueabihf/broot
+
+2- Move the broot binary to the /usr/local/bin directory, and give the file execute permission:
+
+ sudo mv broot /usr/local/bin
+ sudo chmod +x /usr/local/bin/broot
+
+3- Run broot with the following command:
+
+broot
+
+4- You are prompted to install the broot shell function. Choose Yes (Y) to continue.
+
+5- Restart your shell session by exiting and logging back in, or source your ~/.bashrc file:
+source ~/.bashrc
+
+6-Verify the broot installation.
+broot --version
+
+7- You should get something like:
+broot 1.13.3
